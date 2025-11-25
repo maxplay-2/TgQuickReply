@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tgquickreply"
+version = "1.0a1"
+description = "Desktop приложение на PySide6 для быстрого ответа в Telegram"
+readme = "README.md"   
+requires-python = ">=3.9"
+
+authors = [
+    { name = "Maxplay", email = "maksimaleksandrovich@14gmail.com" }
+]
+
+license = "MIT"
+
+dependencies = [
+    "PySide6",
+    "python-telegram-bot>=22.0",
+    "playsound",
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Communications :: Chat",
+    "Environment :: X11 Applications :: Qt"
+]
+
+[project.scripts]
+tgquickreply = "running:r"
+
+[tool.setuptools]
+py-modules = ["TgQuickReply", "running"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+tgquickreply = ["notification.wav"]
