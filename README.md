@@ -21,3 +21,15 @@
 
 
 актуальная версия : alpha 1.0
+
+
+
+## Установка
+```bash
+pip install tgquickreply
+```
+## использование
+```bash
+tgquickreply
+```
+
